@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 import bcrypt from "bcrypt"
-import authorRouter from "./authors"
+
 
 const { Schema, model } = mongoose
 
@@ -31,10 +31,10 @@ AuthorSchema.methods.toJSON = function () {
   
   delete authorObject.password
 
-  delete authorObject.__v
+  // delete authorObject.__v
 }
 
-authorRouter.statics.checkCredentials = async function (email, plainPW) {
+AuthorSchema.statics.checkCredentials = async function (email, plainPW) {
   const author = await this.findOne({email})
 
   if(user){
