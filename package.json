@@ -1,0 +1,33 @@
+{
+  "name": "Strive-Homework-M6D7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon -e js -r dotenv/config  ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarath-97/Strive-Homework-M6D7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarath-97/Strive-Homework-M6D7/issues"
+  },
+  "homepage": "https://github.com/Sarath-97/Strive-Homework-M6D7#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^6.0.0",
+    "http-errors": "^1.8.0",
+    "mongoose": "^6.0.3",
+    "query-to-mongo": "^0.10.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
